@@ -1,0 +1,33 @@
+$red: #ee2b47;
+$grey: #34374c;
+$black: #2c2e3e;
+$white: #f6f6f6;
+$gradient: linear-gradient(
+  to bottom,
+  #ee2b47,
+  #c12968,
+  #863671,
+  #4f3861,
+  #2c2e3e
+);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Cambay", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: "Big Shoulders Display", cursive;
+}

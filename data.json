@@ -1,0 +1,136 @@
+{
+    "data": {
+        "name": "¡Hola! Soy Ramón Ruiz Un Creador Frontend De Sitios Web.",
+        "description": "Programador | Frontend Developer | Estudiante de Platzi | Freelancer | Creador Audiovisual en ocasiones.",
+        "avatar": "https://firebasestorage.googleapis.com/v0/b/ramonruizdev.appspot.com/o/img%2Fimg.jpeg?alt=media&token=4171999c-50c5-4892-8679-c7eecc6790bf",
+        "hero": {
+            "cv_url": "",
+            "social" : [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/ramonruizdev",
+                    "icon": ""
+                },
+                {
+                    "name": "LinkedIn",
+                    "url": "https://www.linkedin.com/in/ramonruizrocha/",
+                    "icon": ""
+                },
+                {
+                    "name": "Twitter",
+                    "url": "https://twitter.com/ramonruizdev",
+                    "icon": ""
+                },
+                {
+                    "name": "Platzi",
+                    "url": "https://platzi.com/p/ramonruiz/",
+                    "icon": ""
+                }
+            ]
+        },
+        "portafolio": {
+            "title": "Portafolio",
+            "projects": [
+                {
+                    "name": "",
+                    "description": "",
+                    "project_url": "",
+                    "code_url": "",
+                    "image": "",
+                    "techs": [
+                        {
+                            "name": "",
+                            "icon": ""
+                        },
+                        {
+                            "name": "",
+                            "icon": ""
+                        },
+                        {
+                            "name": "",
+                            "icon": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "project_url": "",
+                    "code_url": "",
+                    "image": "",
+                    "techs": [
+                        {
+                            "name": "",
+                            "icon": ""
+                        },
+                        {
+                            "name": "",
+                            "icon": ""
+                        },
+                        {
+                            "name": "",
+                            "icon": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "",
+                    "description": "",
+                    "project_url": "",
+                    "code_url": "",
+                    "image": "",
+                    "techs": [
+                        {
+                            "name": "",
+                            "icon": ""
+                        },
+                        {
+                            "name": "",
+                            "icon": ""
+                        },
+                        {
+                            "name": "",
+                            "icon": ""
+                        }
+                    ]
+                }
+            ]
+
+        },
+        "testimonials" : {
+            "title": "Testimonios",
+            "testimonial": [
+                {
+                    "name": "",
+                    "text": "",
+                    "avatar": ""
+                }
+            ]
+        },
+        "footer": {
+            "copy": "@ramonruizdev",
+            "social" : [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/ramonruizdev",
+                    "icon": ""
+                },
+                {
+                    "name": "LinkedIn",
+                    "url": "https://www.linkedin.com/in/ramonruizrocha/",
+                    "icon": ""
+                },
+                {
+                    "name": "Twitter",
+                    "url": "https://twitter.com/ramonruizdev",
+                    "icon": ""
+                },
+                {
+                    "name": "Platzi",
+                    "url": "https://platzi.com/p/ramonruiz/",
+                    "icon": ""
+                }
+            ]
+        }
+    }
+}
