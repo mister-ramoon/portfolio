@@ -1,1 +1,107 @@
 @import "../index.scss";
+
+.portafolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portafolio__project {
+  background-color: $grey;
+  margin: 3rem 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: -1px -2px 10px 5px rgba(255, 255, 255, 0.5);
+  text-shadow: 1px 10px 10px rgba(0, 0, 0, 0.7);
+  transition: 0.5s;
+
+  &:hover {
+    box-shadow: -1px -2px 10px 5px rgba(255, 255, 255, 0.9);
+    transition: 0.5s;
+  }
+}
+
+.porafolio__img--container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.portafolio__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem 1rem 0 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+.portafolio__text {
+  padding: 1rem;
+}
+
+.portafolio__text--title {
+  color: $white;
+  font-size: 3rem;
+}
+.portafolio__text--description {
+  color: $white;
+  font-size: 1.6rem;
+  line-height: 120%;
+  margin-top: 1rem;
+}
+
+.portafolio__btn {
+  color: $white;
+  background-color: $red;
+  border: none;
+  padding: 1rem;
+  font-family: "Big Shoulders Display", cursive;
+  margin: 2rem;
+  font-size: 2rem;
+  font-weight: 800;
+  box-shadow: -1px -2px 10px 5px rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+  text-shadow: 1px 10px 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .portafolio {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  .portafolio__project {
+    flex-direction: row;
+  }
+  .portafolio__img {
+    border-radius: 1rem;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .portafolio__text--title {
+    font-size: 4rem;
+  }
+  .portafolio__text--description {
+    color: $white;
+    font-size: 1.8rem;
+  }
+
+  .portafolio__btn {
+    color: $white;
+    background-color: $red;
+    border: none;
+    padding: 1rem;
+    font-family: "Big Shoulders Display", cursive;
+    margin: 2rem;
+    font-size: 2.3rem;
+    font-weight: 800;
+    box-shadow: -1px -2px 10px 5px rgba(255, 255, 255, 0.2);
+    border-radius: 1rem;
+    text-shadow: 1px 10px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+}

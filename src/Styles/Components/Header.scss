@@ -34,6 +34,7 @@
   font-weight: 600;
   margin-left: -3px;
   border-radius: 0 5px 5px 0;
+  text-shadow: 1px 10px 10px rgba(0, 0, 0, 0.7);
 }
 
 .header__nav--list {
@@ -47,6 +48,7 @@
   color: $white;
   text-decoration: none;
   transition: 0.7s;
+  text-shadow: 1px 10px 10px rgba(0, 0, 0, 0.5);
 
   &:hover {
     background-color: $red;
