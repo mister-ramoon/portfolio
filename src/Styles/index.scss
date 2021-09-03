@@ -22,6 +22,10 @@ html {
   font-family: "Cambay", sans-serif;
 }
 
+body {
+  background: $grey;
+}
+
 h1,
 h2,
 h3,
@@ -40,4 +44,29 @@ input:-webkit-autofill:active {
   -webkit-text-fill-color: $white;
   box-shadow: 0 0 0 30px $grey inset;
   caret-color: $white;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-image: $gradient;
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background-image: $gradient;
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: $gradient;
+  transition: 0.5s;
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-image: $gradient;
+}
+
+textarea {
+  resize: none;
 }
