@@ -5,6 +5,19 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  transition: 1s;
+}
+.header-scroll {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: $red;
+  box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.7);
+  border-radius: 0 0 1rem 1rem;
+  transition: 1s;
 }
 .header__img--container {
   display: flex;
@@ -44,7 +57,7 @@
 .header__nav--link {
   padding: 1rem;
   margin: 0 1rem;
-  font-size: 2.2rem;
+  font-size: 2.6rem;
   color: $white;
   text-decoration: none;
   transition: 0.7s;
@@ -131,6 +144,10 @@
   }
 
   .header {
+    padding: 0;
+    justify-content: space-between;
+  }
+  .header-scroll {
     padding: 0;
     justify-content: space-between;
   }

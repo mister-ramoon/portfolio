@@ -54,8 +54,7 @@ function Contact() {
         <textarea
           type="text"
           name="message"
-          rows="6"
-          cols="50"
+          rows="4"
           className="contact__input"
           value={toSend.message}
           onChange={handleChange}

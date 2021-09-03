@@ -1,9 +1,28 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../Styles/Components/Header.scss";
 
 function Header() {
+  const [headerBackground, setHeaderBackground] = useState("header");
+  const navRef = React.useRef();
+  navRef.current = headerBackground;
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const show = window.scrollY > 1;
+      if (show) {
+        setHeaderBackground("header-scroll");
+      } else {
+        setHeaderBackground("header");
+      }
+    };
+    document.addEventListener("scroll", handleScroll);
+    return () => {
+      document.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="header">
+    <header className={[navRef.current]}>
       <a className="header__img--container" href="/">
         <img
           alt="Logo Imagen"
