@@ -1,1 +1,29 @@
 @import "../index.scss";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.footer__copy--text {
+  color: $white;
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .footer__copy--text {
+    color: $white;
+    font-size: 2.2rem;
+    text-shadow: 1px 10px 10px rgba(0, 0, 0, 0.7);
+    margin: 1rem;
+  }
+}
