@@ -20,6 +20,7 @@ $gradient: linear-gradient(
 html {
   font-size: 62.5%;
   font-family: "Cambay", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -69,4 +70,8 @@ input:-webkit-autofill:active {
 
 textarea {
   resize: none;
+}
+
+[id] {
+  scroll-margin-top: 25vh;
 }

@@ -3,7 +3,7 @@ import "../Styles/Components/Testimonials.scss";
 
 function Testimonials() {
   return (
-    <div className="testimonials__container">
+    <div className="testimonials__container" id="testimonios">
       <h2 className="title">Testimonios</h2>
       <div className="testimonials">
         <div className="testimonial">

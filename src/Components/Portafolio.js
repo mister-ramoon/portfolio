@@ -3,7 +3,7 @@ import "../Styles/Components/Portafolio.scss";
 
 function Portafolio() {
   return (
-    <div className="portafolio__content">
+    <div className="portafolio__content" id="portafolio">
       <h2 className="title">Proyectos</h2>
       <section className="portafolio">
         <div className="portafolio__project">
