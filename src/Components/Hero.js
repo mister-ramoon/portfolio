@@ -29,7 +29,11 @@ function Hero() {
         <div className="hero__list--container">
           <ul className="hero__list">
             <li className="hero__list--item">
-              <a href="/" target="_blank" className="hero__list--link">
+              <a
+                href="https://www.linkedin.com/in/ramonruizrocha/"
+                target="__blank"
+                className="hero__list--link"
+              >
                 <img
                   className="hero__list--img"
                   alt="Social Icon"
@@ -38,7 +42,11 @@ function Hero() {
               </a>
             </li>
             <li className="hero__list--item">
-              <a href="/" target="_blank" className="hero__list--link">
+              <a
+                href="https://github.com/ramonruizdev"
+                target="__blank"
+                className="hero__list--link"
+              >
                 <img
                   className="hero__list--img"
                   alt="Social Icon"
@@ -47,7 +55,11 @@ function Hero() {
               </a>
             </li>
             <li className="hero__list--item">
-              <a href="/" target="_blank" className="hero__list--link">
+              <a
+                href="https://platzi.com/p/ramonruiz/"
+                target="__blank"
+                className="hero__list--link"
+              >
                 <img
                   className="hero__list--img"
                   alt="Social Icon"
@@ -56,7 +68,11 @@ function Hero() {
               </a>
             </li>
             <li className="hero__list--item">
-              <a href="/" target="_blank" className="hero__list--link">
+              <a
+                href="https://twitter.com/ramonruizdev"
+                target="__blank"
+                className="hero__list--link"
+              >
                 <img
                   className="hero__list--img"
                   alt="Social Icon"
@@ -67,7 +83,11 @@ function Hero() {
           </ul>
         </div>
         <div className="hero__cv">
-          <a className="hero__cv--link" href="/">
+          <a
+            className="hero__cv--link"
+            href="https://firebasestorage.googleapis.com/v0/b/ramonruizdev.appspot.com/o/files%2Fcv.pdf?alt=media&token=c3de0a8d-b076-48b9-9ae5-b6433b7ca18c"
+            target="__blank"
+          >
             <button className="hero__cv--btn">Curriculum</button>
           </a>
         </div>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { send } from "emailjs-com";
+import Swal from "sweetalert2";
 import "../Styles/Components/Contact.scss";
 
 function Contact() {
@@ -8,6 +9,18 @@ function Contact() {
     to_name: "",
     message: "",
     reply_to: "",
+  });
+
+  const Toast = Swal.mixin({
+    customClass: {
+      title: "swal-title",
+    },
+    background: "#212936",
+    toast: true,
+    position: "top",
+    showConfirmButton: false,
+    timer: 2500,
+    timerProgressBar: true,
   });
 
   const onSubmit = (e) => {
@@ -19,10 +32,16 @@ function Contact() {
       "user_II3R7MQVCcVq5PhnQ34ey"
     )
       .then((response) => {
-        console.log("Correo enviado!", response.status, response.text);
+        Toast.fire({
+          icon: "success",
+          title: "Registro exitoso",
+        });
       })
       .catch((err) => {
-        console.error("Error! ...", err);
+        Toast.fire({
+          icon: "error",
+          title: "Fallo en el registro",
+        });
       });
   };
 

@@ -23,11 +23,11 @@ function Header() {
   }, []);
 
   const [check, setCheck] = useState(false);
-  const [checkStatus, setcheckStatus] = useState(false);
+  const [checkStatus, setcheckStatus] = useState(true);
 
   function onCheckFalse() {
-    setCheck(false);
     setcheckStatus(true);
+    setCheck(false);
   }
 
   function onCheckTrue() {
@@ -37,7 +37,7 @@ function Header() {
 
   return (
     <header className={[navRef.current]}>
-      <HashLink className="header__img--container">
+      <HashLink className="header__img--container" to="/#">
         <img
           alt="Logo Imagen"
           className="header__img"
