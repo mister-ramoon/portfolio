@@ -65,9 +65,9 @@ function Header() {
               </HashLink>
             </li>
             <li className="header__nav--item">
-              <HashLink className="header__nav--link" to="/#testimonios">
+              {/* <HashLink className="header__nav--link" to="/#testimonios">
                 Testimonios
-              </HashLink>
+              </HashLink> */}
             </li>
           </ul>
         </nav>
@@ -114,13 +114,13 @@ function Header() {
               </HashLink>
             </li>
             <li className="header__nav--item">
-              <HashLink
+              {/* <HashLink
                 className="header__nav--link"
                 to="/#testimonios"
                 onClick={onCheckFalse}
               >
                 Testimonios
-              </HashLink>
+              </HashLink> */}
             </li>
           </ul>
         </nav>
