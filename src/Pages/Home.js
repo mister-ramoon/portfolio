@@ -14,7 +14,7 @@ function Home() {
       <Hero />
       <Portafolio />
       <Contact />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Footer />
     </div>
   );
