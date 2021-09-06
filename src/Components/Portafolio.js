@@ -21,7 +21,7 @@ const projects = [
     imagen:
       "https://firebasestorage.googleapis.com/v0/b/ramonruizdev.appspot.com/o/img%2Fcv.png?alt=media&token=e84e8a65-e9d1-486d-b059-6a48e7c0bd26",
     url: "https://ramonruiz-cv.netlify.app/",
-    code: "https://ramonruizdev.github.io/google-clone/",
+    code: "https://github.com/ramonruizdev/frontend",
   },
   {
     id: 3,
