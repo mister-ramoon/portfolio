@@ -4,18 +4,11 @@ import Swal from "sweetalert2";
 import "../Styles/Components/Contact.scss";
 
 function Contact() {
-  const [toSend, setToSend] = useState({
-    from_name: "",
-    to_name: "",
-    message: "",
-    reply_to: "",
-  });
-
   const Toast = Swal.mixin({
     customClass: {
       title: "swal-title",
     },
-    background: "#212936",
+    background: "#34374c",
     toast: true,
     position: "top",
     showConfirmButton: false,
@@ -23,8 +16,16 @@ function Contact() {
     timerProgressBar: true,
   });
 
+  const [toSend, setToSend] = useState({
+    from_name: "",
+    to_name: "",
+    message: "",
+    reply_to: "",
+  });
+
   const onSubmit = (e) => {
     e.preventDefault();
+
     send(
       "service_tyoo6qp",
       "template_hzc46su",
@@ -34,13 +35,13 @@ function Contact() {
       .then((response) => {
         Toast.fire({
           icon: "success",
-          title: "Registro exitoso",
+          title: "¡Exito. Correo enviado!",
         });
       })
       .catch((err) => {
         Toast.fire({
           icon: "error",
-          title: "Fallo en el registro",
+          title: "¡Error al enviar. Vuelve a intentarlo más tarde!",
         });
       });
   };
@@ -48,6 +49,19 @@ function Contact() {
   const handleChange = (e) => {
     setToSend({ ...toSend, [e.target.name]: e.target.value });
   };
+
+  function componentDidMount() {
+    let nameMs = document.getElementById("nombre");
+    let mailMs = document.getElementById("correo");
+    let textMs = document.getElementById("mensaje");
+
+    if (!nameMs.value || !mailMs.value || !textMs.value) {
+      Toast.fire({
+        icon: "error",
+        title: "¡Error al enviar! Revisa que hayas llenado todo los campos.",
+      });
+    }
+  }
 
   return (
     <div className="contact__container" id="contacto">
@@ -57,15 +71,19 @@ function Contact() {
         <input
           type="text"
           name="from_name"
+          id="nombre"
+          required
           className="contact__input"
-          value={toSend.from_name}
+          value={toSend.xfrom_name}
           onChange={handleChange}
         />
         <label className="contact__label">Correo</label>
         <input
-          type="text"
+          type="email"
           name="reply_to"
           className="contact__input"
+          required
+          id="correo"
           value={toSend.reply_to}
           onChange={handleChange}
         />
@@ -74,11 +92,19 @@ function Contact() {
           type="text"
           name="message"
           rows="4"
+          id="mensaje"
+          required
           className="contact__input"
           value={toSend.message}
           onChange={handleChange}
         />
-        <input className="contact__btn" type="submit" value="Enviar" />
+        <input
+          className="contact__btn"
+          id="submit"
+          type="submit"
+          value="Enviar"
+          onClick={componentDidMount}
+        />
       </form>
     </div>
   );
