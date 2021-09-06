@@ -16,7 +16,11 @@ function Footer() {
           </div>
           <ul className="hero__list">
             <li className="hero__list--item">
-              <a href="/" target="_blank" className="hero__list--link">
+              <a
+                href="https://www.linkedin.com/in/ramonruizrocha/"
+                target="__blank"
+                className="hero__list--link"
+              >
                 <img
                   className="hero__list--img"
                   alt="Social Icon"
@@ -25,7 +29,11 @@ function Footer() {
               </a>
             </li>
             <li className="hero__list--item">
-              <a href="/" target="_blank" className="hero__list--link">
+              <a
+                href="https://github.com/ramonruizdev"
+                target="__blank"
+                className="hero__list--link"
+              >
                 <img
                   className="hero__list--img"
                   alt="Social Icon"
@@ -34,7 +42,11 @@ function Footer() {
               </a>
             </li>
             <li className="hero__list--item">
-              <a href="/" target="_blank" className="hero__list--link">
+              <a
+                href="https://platzi.com/p/ramonruiz/"
+                target="__blank"
+                className="hero__list--link"
+              >
                 <img
                   className="hero__list--img"
                   alt="Social Icon"
@@ -43,7 +55,11 @@ function Footer() {
               </a>
             </li>
             <li className="hero__list--item">
-              <a href="/" target="_blank" className="hero__list--link">
+              <a
+                href="https://twitter.com/ramonruizdev"
+                target="__blank"
+                className="hero__list--link"
+              >
                 <img
                   className="hero__list--img"
                   alt="Social Icon"
