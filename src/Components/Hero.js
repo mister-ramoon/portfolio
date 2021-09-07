@@ -4,7 +4,6 @@ import githubIcon from "../Icons/Github.svg";
 import twitterIcon from "../Icons/Twitter.svg";
 import LinkedinIcon from "../Icons/Linkedin.svg";
 import PlatziIcon from "../Icons/Platzi.svg";
-import Fade from "react-reveal/Fade";
 
 function Hero() {
   return (
