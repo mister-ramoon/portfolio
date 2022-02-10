@@ -1,7 +1,7 @@
 @import "../index.scss";
 
 .testimonial {
-  background-image: $gradient;
+  background: $background;
   text-align: center;
   padding: 2rem;
   margin: 3rem 2rem;
@@ -14,13 +14,13 @@
   box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.5);
 }
 .testimonial h3 {
-  color: $white;
+  color: $text;
   text-shadow: 1px 10px 10px rgba(0, 0, 0, 0.5);
   font-size: 2rem;
   margin: 1rem;
 }
 .testimonial p {
-  color: $white;
+  color: $text;
   font-size: 1.6rem;
   line-height: 120%;
   text-align: left;

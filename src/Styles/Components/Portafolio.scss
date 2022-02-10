@@ -9,7 +9,7 @@
 
 .title {
   font-size: 4rem;
-  color: $white;
+  color: $text;
   text-align: center;
   margin: 2rem;
   font-weight: 600;
@@ -17,7 +17,7 @@
 }
 
 .portafolio__project {
-  background-image: $gradient;
+  background: $background;
   margin: 3rem 1rem;
   border-radius: 1rem;
   display: flex;
@@ -52,19 +52,19 @@
 }
 
 .portafolio__text--title {
-  color: $white;
+  color: $text;
   font-size: 3rem;
 }
 .portafolio__text--description {
-  color: $white;
+  color: $text;
   font-size: 1.6rem;
   line-height: 120%;
   margin-top: 1rem;
 }
 
 .portafolio__btn {
-  color: $white;
-  background-color: $red;
+  color: $text;
+  background-color: $primary;
   border: none;
   padding: 1rem;
   font-family: "Big Shoulders Display", cursive;
@@ -101,13 +101,13 @@
     font-size: 4rem;
   }
   .portafolio__text--description {
-    color: $white;
+    color: $text;
     font-size: 1.8rem;
   }
 
   .portafolio__btn {
-    color: $white;
-    background-color: $red;
+    color: $text;
+    background-color: $primary;
     border: none;
     padding: 1rem;
     font-family: "Big Shoulders Display", cursive;
