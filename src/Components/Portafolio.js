@@ -69,7 +69,7 @@ console.log(widthScreen);
 
 function Portafolio() {
   return (
-    <div className="portafolio__content" id="portafolio">
+    <div className="portafolio__content" id="portfolio">
       <h2 className="title">Proyectos</h2>
       <section className="portafolio">
         {projects.map((project) => (

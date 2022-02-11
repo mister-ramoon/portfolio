@@ -7,7 +7,7 @@ import PlatziIcon from "../Icons/Platzi.svg";
 
 function Hero() {
   return (
-    <section className="hero" id="sobre-mi">
+    <section className="hero" id="about-me">
       <div className="hero__container content1">
         <div className="hero__img--container">
           <img

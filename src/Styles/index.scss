@@ -44,7 +44,7 @@ input:-webkit-autofill:active {
 
 ::-webkit-scrollbar {
   width: 10px;
-  background: $background;
+  background: $secondary;
   border-radius: 1rem;
 }
 
@@ -54,13 +54,13 @@ input:-webkit-autofill:active {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: $background;
+  background: $secondary;
   transition: 0.5s;
   border-radius: 1rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: $background;
+  background: $secondary;
 }
 
 textarea {

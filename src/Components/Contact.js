@@ -64,7 +64,7 @@ function Contact() {
   }
 
   return (
-    <div className="contact__container" id="contacto">
+    <div className="contact__container" id="contact-me">
       <h2 className="title">Hablemos</h2>
       <form onSubmit={onSubmit} className="contact__form">
         <label className="contact__label">Nombre</label>
