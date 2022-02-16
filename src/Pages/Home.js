@@ -12,10 +12,10 @@ function Home() {
     <div className="root">
       <Header />
       <Hero />
-      <Portafolio />
-      <Contact />
+      {/* <Portafolio /> */}
+      {/* <Contact /> */}
       {/* <Testimonials /> */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
