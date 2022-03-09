@@ -1,5 +1,5 @@
-import React from "react";
-import "../Styles/Components/Portafolio.scss";
+import React, { useState, useEffect } from "react";
+import Projects from "./Projects";
 
 const projects = [
   {
@@ -63,117 +63,46 @@ const projects = [
     code: "https://github.com/ramonruizdev/css-grid/tree/master/pinterest",
   },
 ];
+const projectsPerPage = 3;
+let arrayForHoldingProjects = [];
 
-var widthScreen = window.innerWidth;
-console.log(widthScreen);
+const Portafolio = () => {
+  const [projectsToShow, setProjectsToShow] = useState([]);
+  const [show, setShow] = useState(true);
+  const [next, setNext] = useState(3);
 
-function Portafolio() {
+  const loopWithSlice = (start, end) => {
+    const slicedProjects = projects.slice(start, end);
+    arrayForHoldingProjects = [...arrayForHoldingProjects, ...slicedProjects];
+    setProjectsToShow(arrayForHoldingProjects);
+  };
+
+  useEffect(() => {
+    loopWithSlice(0, projectsPerPage);
+  }, []);
+
+  const showLoadMore = () => {
+    setShow(false);
+  };
+
+  const handleShowMoreProjects = () => {
+    loopWithSlice(next, next + projectsPerPage);
+    setNext(next + projectsPerPage);
+    showLoadMore();
+  };
+
   return (
-    <div className="portafolio__content" id="portfolio">
-      <h2 className="title">Proyectos</h2>
-      <section className="portafolio">
-        {projects.map((project) => (
-          <div>
-            {project.id % 2 === 0 ? (
-              <div className="portafolio__project">
-                {widthScreen >= 768 && project.id % 2 === 0 ? (
-                  <div
-                    className="porafolio__img--container"
-                    style={{ order: 2 }}
-                  >
-                    <img
-                      className="portafolio__img"
-                      alt="Proyect Imagen"
-                      src={project.imagen}
-                    />
-                  </div>
-                ) : (
-                  <div
-                    className="porafolio__img--container"
-                    style={{ order: "initial" }}
-                  >
-                    <img
-                      className="portafolio__img"
-                      alt="Proyect Imagen"
-                      src={project.imagen}
-                    />
-                  </div>
-                )}
-
-                <div className="portafolio__text">
-                  <h3 className="portafolio__text--title">{project.title}</h3>
-                  <p className="portafolio__text--description">
-                    {project.description}
-                  </p>
-                  <a
-                    className="portafolio__link"
-                    target="__blank"
-                    href={project.url}
-                  >
-                    <button className="portafolio__btn">Ver Proyecto</button>
-                  </a>
-                  <a
-                    className="portafolio__link"
-                    target="__blank"
-                    href={project.code}
-                  >
-                    <button className="portafolio__btn">Ver Código</button>
-                  </a>
-                </div>
-              </div>
-            ) : (
-              <div className="portafolio__project">
-                {widthScreen >= 768 && project.id % 2 === 0 ? (
-                  <div
-                    className="porafolio__img--container"
-                    style={{ order: 2 }}
-                  >
-                    <img
-                      className="portafolio__img"
-                      alt="Proyect Imagen"
-                      src={project.imagen}
-                    />
-                  </div>
-                ) : (
-                  <div
-                    className="porafolio__img--container"
-                    style={{ order: "initial" }}
-                  >
-                    <img
-                      className="portafolio__img"
-                      alt="Proyect Imagen"
-                      src={project.imagen}
-                    />
-                  </div>
-                )}
-
-                <div className="portafolio__text">
-                  <h3 className="portafolio__text--title">{project.title}</h3>
-                  <p className="portafolio__text--description">
-                    {project.description}
-                  </p>
-                  <a
-                    className="portafolio__link"
-                    target="__blank"
-                    href={project.url}
-                  >
-                    <button className="portafolio__btn">Ver Proyecto</button>
-                  </a>
-                  <a
-                    className="portafolio__link"
-                    target="__blank"
-                    href={project.code}
-                  >
-                    <button className="portafolio__btn">Ver Código</button>
-                  </a>
-                </div>
-              </div>
-            )}
-          </div>
-        ))}
-      </section>
+    <div>
+      <Projects projectsToRender={projectsToShow} />
+      <button
+        className="projects__load-more"
+        onClick={handleShowMoreProjects}
+        style={{ display: show ? "block" : "none" }}
+      >
+        Load more
+      </button>
     </div>
   );
-}
+};
 
 export default Portafolio;

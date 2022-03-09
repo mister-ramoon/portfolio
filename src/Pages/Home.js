@@ -12,7 +12,7 @@ function Home() {
     <div className="root">
       <Header />
       <Hero />
-      {/* <Portafolio /> */}
+      <Portafolio />
       {/* <Contact /> */}
       {/* <Testimonials /> */}
       {/* <Footer /> */}
