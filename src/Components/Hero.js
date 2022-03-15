@@ -74,7 +74,7 @@ function Hero() {
           <div className="hero__cv">
             <a
               className="hero__cv--link"
-              href="https://firebasestorage.googleapis.com/v0/b/ramonruizdev.appspot.com/o/files%2Fcv.pdf?alt=media&token=c3de0a8d-b076-48b9-9ae5-b6433b7ca18c"
+              href="https://firebasestorage.googleapis.com/v0/b/ramonruizdev.appspot.com/o/files%2FCV-Frontend-RamonRuiz.pdf?alt=media&token=15c54e2f-c296-42b8-9117-bef32f600b40"
               target="__blank"
             >
               <button className="hero__cv--btn">Download CV</button>
