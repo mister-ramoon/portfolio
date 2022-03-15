@@ -8,7 +8,7 @@ function Contact() {
     customClass: {
       title: "swal-title",
     },
-    background: "#34374c",
+    background: "#04081a",
     toast: true,
     position: "top",
     showConfirmButton: false,
@@ -27,7 +27,7 @@ function Contact() {
     e.preventDefault();
 
     send(
-      "service_tyoo6qp",
+      "service_re6p7d9",
       "template_hzc46su",
       toSend,
       "user_II3R7MQVCcVq5PhnQ34ey"
@@ -35,13 +35,13 @@ function Contact() {
       .then((response) => {
         Toast.fire({
           icon: "success",
-          title: "¡Exito. Correo enviado!",
+          title: "Success. Email sent!",
         });
       })
       .catch((err) => {
         Toast.fire({
           icon: "error",
-          title: "¡Error al enviar. Vuelve a intentarlo más tarde!",
+          title: "Failed to send. Try again later!",
         });
       });
   };
@@ -58,16 +58,16 @@ function Contact() {
     if (!nameMs.value || !mailMs.value || !textMs.value) {
       Toast.fire({
         icon: "error",
-        title: "¡Error al enviar! Revisa que hayas llenado todo los campos.",
+        title: "Error sending! Check that you have filled in all the fields.",
       });
     }
   }
 
   return (
     <div className="contact__container" id="contact-me">
-      <h2 className="title">Hablemos</h2>
+      <h2 className="contact_title">Contact Me:</h2>
       <form onSubmit={onSubmit} className="contact__form">
-        <label className="contact__label">Nombre</label>
+        <label className="contact__label">Name</label>
         <input
           type="text"
           name="from_name"
@@ -77,7 +77,7 @@ function Contact() {
           value={toSend.xfrom_name}
           onChange={handleChange}
         />
-        <label className="contact__label">Correo</label>
+        <label className="contact__label">Email</label>
         <input
           type="email"
           name="reply_to"
@@ -87,7 +87,7 @@ function Contact() {
           value={toSend.reply_to}
           onChange={handleChange}
         />
-        <label className="contact__label">Mensaje</label>
+        <label className="contact__label">Message</label>
         <textarea
           type="text"
           name="message"
@@ -102,7 +102,7 @@ function Contact() {
           className="contact__btn"
           id="submit"
           type="submit"
-          value="Enviar"
+          value="Send"
           onClick={componentDidMount}
         />
       </form>
