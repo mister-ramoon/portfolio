@@ -13,9 +13,9 @@ function Home() {
       <Header />
       <Hero />
       <Portafolio />
-      <Contact />
+      {/* <Contact /> */}
       {/* <Testimonials /> */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

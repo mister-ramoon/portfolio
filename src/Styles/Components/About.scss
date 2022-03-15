@@ -1,0 +1,29 @@
+@import "../index.scss";
+
+.about {
+  margin: 0 5%;
+}
+.about__title {
+  font-size: 2.2rem;
+  color: $text;
+}
+.about__text {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  color: $text;
+  text-align: justify;
+}
+
+@media screen and (min-width: 1000px) {
+  .about {
+    margin: 0 10%;
+    max-width: 900px;
+    margin: auto;
+  }
+  .about__title {
+    font-size: 2.5rem;
+  }
+  .about__text {
+    font-size: 1.8rem;
+  }
+}
