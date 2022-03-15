@@ -48,14 +48,14 @@ const Projects = ({ projectsToRender }) => {
                       target="__blank"
                       href={project.url}
                     >
-                      <button className="portafolio__btn">Ver Proyecto</button>
+                      <button className="portafolio__btn">View Project</button>
                     </a>
                     <a
                       className="portafolio__link"
                       target="__blank"
                       href={project.code}
                     >
-                      <button className="portafolio__btn">Ver Código</button>
+                      <button className="portafolio__btn">View Code</button>
                     </a>
                   </div>
                 </div>
@@ -97,14 +97,14 @@ const Projects = ({ projectsToRender }) => {
                       target="__blank"
                       href={project.url}
                     >
-                      <button className="portafolio__btn">Ver Proyecto</button>
+                      <button className="portafolio__btn">View Project</button>
                     </a>
                     <a
                       className="portafolio__link"
                       target="__blank"
                       href={project.code}
                     >
-                      <button className="portafolio__btn">Ver Código</button>
+                      <button className="portafolio__btn">View Code</button>
                     </a>
                   </div>
                 </div>

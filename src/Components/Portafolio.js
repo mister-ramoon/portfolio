@@ -6,7 +6,7 @@ const projects = [
     id: 1,
     title: "Google Clone",
     description:
-      "Google Clone es una copia responsive del buscador en Google hecho enteramente con HTML y CSS.",
+      "Google Clone is a responsive copy of the Google search, made only with HTML and CSS.",
     imagen:
       "https://firebasestorage.googleapis.com/v0/b/ramonruizdev.appspot.com/o/img%2Fgoogle-clone.png?alt=media&token=0b731003-dac0-4f24-9f91-f28fbb038870",
     url: "https://ramonruizdev.github.io/google-clone/",
@@ -14,9 +14,9 @@ const projects = [
   },
   {
     id: 2,
-    title: "Ramón Ruiz CV - React App",
+    title: "CV - React App",
     description:
-      "Creé mi CV usando React JS donde mando a llamar una API con mis datos desde Heroku en un server-json.",
+      "I develop my CV on a website, where I call an API to display my data. I used: ReactJS, Stylus, JavaScript.",
     imagen:
       "https://firebasestorage.googleapis.com/v0/b/ramonruizdev.appspot.com/o/img%2Fcv.png?alt=media&token=e84e8a65-e9d1-486d-b059-6a48e7c0bd26",
     url: "https://ramonruiz-cv.netlify.app/",
@@ -26,7 +26,7 @@ const projects = [
     id: 3,
     title: "Platzi Video",
     description:
-      "Diseño del home, login, registro y error pages de un sitio web para películas usando HTML y CSS",
+      "Design of the home, login, registration and error pages of a website for movies with only HTML and CSS.",
     imagen:
       "https://firebasestorage.googleapis.com/v0/b/ramonruizdev.appspot.com/o/img%2Fplatzi-video.png?alt=media&token=1aa88cca-18c3-4320-b3b1-5e046c43ed81",
     url: "https://ramonruizdev.github.io/platzi-video-frontend/platzi-video/",
@@ -34,9 +34,9 @@ const projects = [
   },
   {
     id: 4,
-    title: "Platzi Master X Day",
+    title: "Platzi Master X Day - Trello API",
     description:
-      "Reto Frontend del Platzi Master X Day donde junto a un equipo creamos una web simple para visualizar los datos del API en tableros de Trello",
+      "Frontend Platzi Master X Day Challenge. Together with a team, we built a simple website to display API data on Trello boards. I used: Javascript, SASS, HTML.",
     imagen:
       "https://firebasestorage.googleapis.com/v0/b/ramonruizdev.appspot.com/o/img%2Fxday.png?alt=media&token=c815e477-3060-4fac-a400-8e1f6081a7cd",
     url: "https://platzi-master-team17.herokuapp.com/",
@@ -44,9 +44,9 @@ const projects = [
   },
   {
     id: 5,
-    title: "Instagram CSS Grid ",
+    title: "Instagram CSS Grid",
     description:
-      "En el proyecto creé un diseño responsivo similar a la página de usuario en Instagram usando CSS Grid Layout",
+      "In this project I created a responsive layout similar to the Instagram user page using CSS Grid Layout. I used: CSS, HTML.",
     imagen:
       "https://firebasestorage.googleapis.com/v0/b/ramonruizdev.appspot.com/o/img%2Finsta.png?alt=media&token=926e43eb-2a5f-4a44-a9ae-9cd1c7b357d9",
     url: "https://ramonruizdev.github.io/css-grid/instagram",
@@ -56,20 +56,40 @@ const projects = [
     id: 6,
     title: "Pinterest CSS Grid",
     description:
-      "En el proyecto creé un diseño responsivo similar a la página de Pinterest usando CSS Grid Layout",
+      "In this project I created a responsive layout similar to the Pinterest user page using CSS Grid Layout. I used: CSS , HTML.",
     imagen:
       "https://firebasestorage.googleapis.com/v0/b/ramonruizdev.appspot.com/o/img%2Fpint.png?alt=media&token=fc623500-d8c2-4b90-ac5a-21e777464382",
     url: "https://ramonruizdev.github.io/css-grid/pinterest",
     code: "https://github.com/ramonruizdev/css-grid/tree/master/pinterest",
   },
+  {
+    id: 7,
+    title: "Future Value Calculator",
+    description:
+      "I develop a website to calculate the future value. I Used: HTML, CSS, JavaScript.",
+    imagen:
+      "https://firebasestorage.googleapis.com/v0/b/ramonruizdev.appspot.com/o/img%2Ffuture-value.png?alt=media&token=337f18ca-0a34-4099-afef-e25af4650f3f",
+    url: "https://github.com/ramonruizdev/Ejercicio_ValorFuturo/",
+    code: "https://github.com/ramonruizdev/css-grid/tree/master/instagram",
+  },
+  {
+    id: 8,
+    title: "Invoice Generator",
+    description:
+      "I develop a generador de facturas con cupón de descuento. I Used: HTML, CSS, JavaScript.",
+    imagen:
+      "https://firebasestorage.googleapis.com/v0/b/ramonruizdev.appspot.com/o/img%2Fgenerador-facturas.png?alt=media&token=9113fa0f-07bf-4ad5-8f26-46f1151647d5",
+    url: "https://ramonruizdev.github.io/Platzi-Master_generador-de-facturas/",
+    code: "https://github.com/ramonruizdev/Platzi-Master_generador-de-facturas",
+  },
 ];
-const projectsPerPage = 3;
+const projectsPerPage = 4;
 let arrayForHoldingProjects = [];
 
 const Portafolio = () => {
   const [projectsToShow, setProjectsToShow] = useState([]);
   const [show, setShow] = useState(true);
-  const [next, setNext] = useState(3);
+  const [next, setNext] = useState(4);
 
   const loopWithSlice = (start, end) => {
     const slicedProjects = projects.slice(start, end);
