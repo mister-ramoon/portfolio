@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../Styles/Components/Header.scss";
 import { HashLink } from "react-router-hash-link";
-import { Animated } from "react-animated-css";
 import LogoIcon from "../Icons/logo.svg";
 
 function Header() {
