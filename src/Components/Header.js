@@ -58,11 +58,11 @@ function Header() {
               Contact Me
             </HashLink>
           </li>
-          <li className="header__nav--item">
+          {/* <li className="header__nav--item">
             <HashLink className="header__nav--link" to="/#testimonials">
               Testimonials
             </HashLink>
-          </li>
+          </li> */}
         </ul>
       </nav>
       <nav className="header__nav-mobile">
@@ -107,7 +107,7 @@ function Header() {
               Contact Me
             </HashLink>
           </li>
-          <li className="header__nav--item">
+          {/* <li className="header__nav--item">
             <HashLink
               className="header__nav--link"
               to="/#testimonials"
@@ -115,7 +115,7 @@ function Header() {
             >
               Testimonials
             </HashLink>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </header>

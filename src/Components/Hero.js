@@ -32,7 +32,7 @@ function Hero() {
             <ul className="hero__list">
               <li className="hero__list--item">
                 <a
-                  href="https://www.linkedin.com/in/ramonruizrocha/"
+                  href="https://www.linkedin.com/in/ramonruizdev/"
                   target="__blank"
                   className="hero__list--link"
                 >
@@ -74,7 +74,7 @@ function Hero() {
           <div className="hero__cv">
             <a
               className="hero__cv--link"
-              href="https://firebasestorage.googleapis.com/v0/b/ramonruizdev.appspot.com/o/files%2FCV-Frontend-RamonRuiz.pdf?alt=media&token=15c54e2f-c296-42b8-9117-bef32f600b40"
+              href="https://firebasestorage.googleapis.com/v0/b/ramonruizdev.appspot.com/o/files%2Fcv_compressed.pdf?alt=media&token=2e05c4d6-4301-4779-ab0e-4bfa084eb9a6"
               target="__blank"
             >
               <button className="hero__cv--btn">Download CV</button>

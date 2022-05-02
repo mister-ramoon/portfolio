@@ -3,6 +3,28 @@ import "../Styles/Components/Experience.scss";
 
 const experiences = [
   {
+    title: "Frontend Jr",
+    company: "Potentor",
+    date: "Jan 2022 - Present",
+    ubication: "Remote",
+    activities: [
+      "Frontend development of RH Software.",
+      "Use of agile methodologies",
+    ],
+    technologies: ["CSS", "Java", "JavaScript", "Genexus"],
+  },
+  {
+    title: "Webmaster Freelance",
+    company: "Solved Puzzle Agency",
+    date: "Oct 2021 - Jan 2022",
+    ubication: "Remote",
+    activities: [
+      "Frontend development of internal company projects",
+      "Use of agile methodologies",
+    ],
+    technologies: ["Shopify", "WordPress", "JavaScript", "PHP", "CSS"],
+  },
+  {
     title: "Frontend Developer",
     company: "AXO System",
     date: "May 2021 - Sep 2021",
