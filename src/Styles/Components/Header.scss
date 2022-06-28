@@ -178,6 +178,7 @@
 
   #header__nav-mobile--drop:checked ~ .header__nav-mobile--list {
     max-height: calc(110vh - 60px);
+        height: calc(110vh - 60px);
     transition: all 500ms ease-in-out;
   }
   .header__nav-mobile--list li,
